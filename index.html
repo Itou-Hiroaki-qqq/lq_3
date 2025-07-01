@@ -22,9 +22,13 @@
 
   <!-- css -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@3.0.2/destyle.css">
+  <link rel="stylesheet" href="slick/slick.css">
+  <link rel="stylesheet" href="slick/slick-theme.css">
   <link rel="stylesheet" href="assets/style/style.css">
 
   <!-- js -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script src="slick/slick.min.js"></script>
   <script src="assets/script/main.js"></script>
 
 </head>
@@ -33,8 +37,8 @@
     <div class="header-group">
       <h1 class="header-group__title"><a href="/"><img src="assets/image/logo.svg" alt="このページはKIRAMEKI BEAUTY LABOのサービス紹介です。"></a></h1>
       <div class="header-group__btnZone">
-        <a href="/contact/">お問い合わせ</a>
-        <a href="/reservation/">カウンセリング予約(無料)</a>
+        <a class="header-group__btnZone__contactBtn" href="/contact/">お問い合わせ</a>
+        <a class="header-group__btnZone__reserveBtn" href="/reservation/">カウンセリング予約<span>(無料)</span></a>
       </div>
     </div>
   </header>
@@ -68,18 +72,18 @@
         <p class="benefit__attention">今だけ！</p>
         <div class="benefit__content">
           <p class="benefit__content-course">フェイシャルコース</p>
-          <p class="benefit__content-present">3回プレゼント！</p>
+          <p class="benefit__content-present"><span>3</span>回プレゼント！</p>
         </div>
         <p class="benefit__detail">クレンジング/洗顔/フェイスヒーリング/ 整肌</p>
       </div>
 
       <section class="freetrial01">
         <h2 class="freetrial01__title freetrial-title">無料体験実施中！</h2>
-        <a class="freetrial01__btn freetrial-btn" href="/reservation/">カウンセリング予約 はこちら（無料）</a>
+        <a class="freetrial01__btn freetrial-btn" href="/reservation/">カウンセリング予約<br>はこちら（無料）</a>
         <h3 class="freetrial01__subTitle">無料体験内容</h3>
         <p class="freetrial01__detail">
-          〈脱毛体験〉V(10分)or両脇(10分)<br>
-          〈美顔体験〉フェイシャルトリートメント(40分コース1回)
+          〈脱毛体験〉V<span>(10分)or</span>両脇<span>(10分)</span><br>
+          〈美顔体験〉フェイシャルトリートメント<span>(40分コース1回)</span>
         </p>
       </section>
 
@@ -90,11 +94,11 @@
                 <source
                 srcset="assets/image/point_head-logo_pc.svg"
                 media="(min-width: 768px)">
-                <img src="assets/image/point_head-logo_sp.svg" alt="">
+                <img src="assets/image/point_head-logo_sp.svg" alt="KIRAMEKI BEAUTY LABO">
             </picture>
-            が選ばれる
+            <span>が選ばれる</span>
           </p>
-          <h2 class="section-title">3つのポイント</h2>
+          <h2 class="section-title section-title--point">3つのポイント</h2>
         </hgroup>
         <div class="point__section">
           <h3 class="point__topic">POINT1 ｜ 通い放題</h3>
@@ -106,7 +110,7 @@
                     <source
                     srcset="assets/image/point_logo_pc.svg"
                     media="(min-width: 768px)">
-                    <img src="assets/image/point_logo_sp.svg" alt="">
+                    <img src="assets/image/point_logo_sp.svg" alt="KIRAMEKI BEAUTY LABOなら">
                 </picture>
                 <p>来店1回で全身1回</p>
               </div><!-- class="point__content-left" -->
@@ -120,30 +124,74 @@
 
         <div class="point__section">
           <h3 class="point__topic">POINT2 ｜ プランが選べる</h3>
-          <div class="point__content">
-            <p class="point__content-lead">「全身プラン」と、施術部位を選べる「部分脱毛プラン」から自由にお選びいただけます。</p>
+          <div class="point__content point__content--point2">
+            <p class="point__content-lead point__content-lead--point2">「全身プラン」と、施術部位を選べる「部分脱毛プラン」から自由にお選びいただけます。</p>
             <h4 class="point__content-topic">全身プラン</h4>
-            <picture class="point__content-fullbodyImage">
-                <source
-                srcset="assets/image/point_fullbody_pc.png"
-                media="(min-width: 768px)">
-                <img src="assets/image/point_fullbody_sp.png" alt="">
-            </picture>
+            <div class="point__content-fullbodyZone">
+              <picture class="point__content-fullbodyImage">
+                  <source
+                  srcset="assets/image/point_fullbody_pc.png"
+                  media="(min-width: 768px)">
+                  <img src="assets/image/point_fullbody_sp.png" alt="全身プランでは、おでこ、頬、フェイスラインからワキ、へそ周り、背中、Vラインを通り足指甲までの全身に施術を行います">
+              </picture>
+              <div class="point__content-fullbodyTxt01 point__content-fullbodyTxt">
+                おでこ<br>頬<br>フェイスライン<br>鼻下<br>あご
+              </div>
+              <div class="point__content-fullbodyTxt02 point__content-fullbodyTxt">
+                ワキ<br><span>へそ周り</span>
+              </div>
+              <div class="point__content-fullbodyTxt03 point__content-fullbodyTxt">
+                手指甲
+              </div>
+              <div class="point__content-fullbodyTxt04 point__content-fullbodyTxt">
+                Vライン<br>Iライン
+              </div>
+              <div class="point__content-fullbodyTxt05 point__content-fullbodyTxt">
+                ヒザ
+              </div>
+              <div class="point__content-fullbodyTxt06 point__content-fullbodyTxt">
+                足指甲
+              </div>
+              <div class="point__content-fullbodyTxt07 point__content-fullbodyTxt">
+                うなじ
+              </div>
+              <div class="point__content-fullbodyTxt08 point__content-fullbodyTxt">
+                背中
+              </div>
+              <div class="point__content-fullbodyTxt09 point__content-fullbodyTxt">
+                ヒップ
+              </div>
+              <div class="point__content-fullbodyTxt10 point__content-fullbodyTxt">
+                Oライン
+              </div>
+            </div><!-- class="point__content-fullbodyZone" -->
             <h4 class="point__content-topic">部分脱毛プラン</h4>
-            <div class="point__content-partZone">
-              <picture>
-                  <source
-                  srcset="assets/image/point_part-left_pc.png"
-                  media="(min-width: 768px)">
-                  <img src="assets/image/point_part-top_sp.png" alt="">
-              </picture>
-              <picture>
-                  <source
-                  srcset="assets/image/point_part-right_pc.png"
-                  media="(min-width: 768px)">
-                  <img src="assets/image/point_part-under_sp.png" alt="">
-              </picture>
-            </div><!-- class="point__content-partZone" -->
+            <ul class="point__content-partList">
+              <li class="point__content-partItem">
+                <img src="assets/image/point_part_01.png" alt="">
+                <p>うなじ</p>
+              </li>
+              <li class="point__content-partItem">
+                <img src="assets/image/point_part_02.png" alt="">
+                <p>ワキ</p>
+              </li>
+              <li class="point__content-partItem">
+                <img src="assets/image/point_part_03.png" alt="">
+                <p>Oライン</p>
+              </li>
+              <li class="point__content-partItem">
+                <img src="assets/image/point_part_04.png" alt="">
+                <p>おでこ</p>
+              </li>
+              <li class="point__content-partItem">
+                <img src="assets/image/point_part_05.png" alt="">
+                <p>あご</p>
+              </li>
+              <li class="point__content-partItem">
+                <img src="assets/image/point_part_06.png" alt="">
+                <p>フェイスライン</p>
+              </li>
+            </ul>
           </div><!-- class="point__content" -->
         </div><!-- class="point__section" -->
 
@@ -157,32 +205,36 @@
 
       <section class="freetrial02">
         <h2 class="freetrial02__title freetrial-title">無料体験実施中！</h2>
-        <a class="freetrial02__btn freetrial-btn" href="/reservation/">カウンセリング予約 はこちら（無料）</a>
-        <hgroup>
+        <a class="freetrial02__btn freetrial-btn" href="/reservation/">カウンセリング予約<br>はこちら（無料）</a>
+        <hgroup class="freetrial02_titleZone">
           <p class="section-title-lead">ほかにも選べる！</p>
-          <h3 class="section-title">2つのコース</h3>
+          <h3 class="section-title section-title--freetrial02">2つのコース</h3>
         </hgroup>
         <ul class="freetrial02__list">
           <li class="freetrial02__item">
             <h4>ボディコース</h4>
-            <p>ボディケアのスペシャリストが、お客様のお肌を優しく施術いたします。</p>
-            <picture>
-                <source
-                srcset="assets/image/freetrial_body_pc.jpg"
-                media="(min-width: 768px)">
-                <img src="assets/image/freetrial_body_sp.png.jpg" alt="">
-            </picture>
+            <div class="freetrial02__detailZone">
+              <p>ボディケアのスペシャリストが、お客様のお肌を優しく施術いたします。</p>
+              <picture>
+                  <source
+                  srcset="assets/image/freetrial_body_pc.jpg"
+                  media="(min-width: 768px)">
+                  <img src="assets/image/freetrial_body_sp.png.jpg" alt="">
+              </picture>
+            </div>
           </li>
 
           <li class="freetrial02__item">
             <h4>フェイシャルコース</h4>
-            <p>確かな技術を持つエステティシャンが、お客様の理想のお肌に近づけます。</p>
-            <picture>
-                <source
-                srcset="assets/image/freetrial_facial_pc.jpg"
-                media="(min-width: 768px)">
-                <img src="assets/image/freetrial_facial_sp.png.jpg" alt="">
-            </picture>
+            <div class="freetrial02__detailZone">
+              <p>確かな技術を持つエステティシャンが、お客様の理想のお肌に近づけます。</p>
+              <picture>
+                  <source
+                  srcset="assets/image/freetrial_facial_pc.jpg"
+                  media="(min-width: 768px)">
+                  <img src="assets/image/freetrial_facial_sp.png.jpg" alt="">
+              </picture>
+            </div>
           </li>
         </ul>
       </section>
@@ -224,26 +276,28 @@
               </div>
             </li>
         </ul>
+        <!-- PCでの表示用ページネーション -->
+        <div class="pagenation-pc">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </section>
 
       <section class="feetrial03">
         <h2 class="freetrial03__title freetrial-title">無料体験実施中！</h2>
-        <a class="freetrial03__btn freetrial-btn" href="/reservation/">カウンセリング予約 はこちら（無料）</a>
+        <a class="freetrial03__btn freetrial-btn" href="/reservation/">カウンセリング予約<br>はこちら（無料）</a>
       </section>
     </article>
   </main>
 
   <footer class="footer">
-    <a href="/"><img src="assets/image/logo.svg" alt="以上、KIRAMEKI BEAUTY LABOのサービス紹介でした。"></a>
+    <a href="/"><img src="assets//image/footer-logo.svg" alt="以上、KIRAMEKI BEAUTY LABOのサービス紹介でした。"></a>
   </footer>
 </body>
 </html>
 
-<!-- ヘッダを追従させる -->
-<!-- ヘッダーの各リンクを押下する -->
 <!-- 「お客様の声」の各コースがスライドする -->
-
-<!-- alt確認 -->
 
 <!-- 横幅768px未満：SP表示
 横幅768px以上：PC表示 -->
@@ -262,9 +316,5 @@ Noto Sans JPのVariableフォントをインストールされた方は「lp3_va
 
 <!-- SPをperfect pixelで確認する際は横幅をデザインと同じ390pxで確認してください。 -->
 
-<!-- リンク先指定
-設定箇所	URL
-ロゴ	/
-お問い合わせ	/contact/
-カウンセリング予約（無料）	/reservation/
-カウンセリング予約はこちら（無料）	/reservation/ -->
+<!-- 伸び縮み細かく確認 -->
+<!-- ホバー時の画像拡大処理 -->
