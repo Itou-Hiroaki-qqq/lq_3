@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 $('.slider').slick({
                     slidesToShow: 1,
                     centerMode: true,
-                    centerPadding: '7.11%',
+                    centerPadding: '8.5%',
                     arrows: false,
                     dots: true,
                     initialSlide: 1,

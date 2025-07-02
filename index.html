@@ -72,7 +72,11 @@
         <p class="benefit__attention">今だけ！</p>
         <div class="benefit__content">
           <p class="benefit__content-course">フェイシャルコース</p>
-          <p class="benefit__content-present"><span>3</span>回プレゼント！</p>
+          <p class="benefit__content-present">
+            <span class="benefit__content-present__whole">
+              <span class="benefit__content-present__num">3</span>回プレゼント！
+            </span>
+          </p>
         </div>
         <p class="benefit__detail">クレンジング/洗顔/フェイスヒーリング/ 整肌</p>
       </div>
@@ -102,7 +106,7 @@
         </hgroup>
         <div class="point__section">
           <h3 class="point__topic">POINT1 ｜ 通い放題</h3>
-          <div class="point__content">
+          <div class="point__content point__content--point1">
             <p class="point__content-lead">納得いくまで何度でも、追加料金なく安心して通っていただけます。</p>
             <div class="point__content-zone">
               <div class="point__content-left">
@@ -122,8 +126,8 @@
           </div><!-- class="point__content" -->
         </div><!-- class="point__section" -->
 
-        <div class="point__section">
-          <h3 class="point__topic">POINT2 ｜ プランが選べる</h3>
+        <div class="point__section point__section--point2">
+          <h3 class="point__topic point__topic--point2">POINT2 ｜ プランが選べる</h3>
           <div class="point__content point__content--point2">
             <p class="point__content-lead point__content-lead--point2">「全身プラン」と、施術部位を選べる「部分脱毛プラン」から自由にお選びいただけます。</p>
             <h4 class="point__content-topic">全身プラン</h4>
@@ -195,10 +199,10 @@
           </div><!-- class="point__content" -->
         </div><!-- class="point__section" -->
 
-        <div class="point__section">
-          <h3 class="point__topic">POINT3 ｜ 安心のサポート</h3>
-          <div class="point__content">
-            <p class="point__content-lead">提携医療機関のサポートがありますので、ご安心ください。</p>
+        <div class="point__section point__section--point3">
+          <h3 class="point__topic point__topic--point3">POINT3 ｜ 安心のサポート</h3>
+          <div class="point__content point__content--point3">
+            <p class="point__content-lead point__content-lead--point3">提携医療機関のサポートがありますので、ご安心ください。</p>
           </div>
         </div>
       </section>
@@ -214,7 +218,7 @@
           <li class="freetrial02__item">
             <h4>ボディコース</h4>
             <div class="freetrial02__detailZone">
-              <p>ボディケアのスペシャリストが、お客様のお肌を優しく施術いたします。</p>
+              <p class="freetrial02__detailZone--p1">ボディケアのスペシャリストが、お客様のお肌を優しく施術いたします。</p>
               <picture>
                   <source
                   srcset="assets/image/freetrial_body_pc.jpg"
@@ -227,7 +231,7 @@
           <li class="freetrial02__item">
             <h4>フェイシャルコース</h4>
             <div class="freetrial02__detailZone">
-              <p>確かな技術を持つエステティシャンが、お客様の理想のお肌に近づけます。</p>
+              <p class="freetrial02__detailZone--p2">確かな技術を持つエステティシャンが、お客様の理想のお肌に近づけます。</p>
               <picture>
                   <source
                   srcset="assets/image/freetrial_facial_pc.jpg"
@@ -240,16 +244,16 @@
       </section>
 
       <section class="voice">
-        <h2 class="section-title">お客様の声</h2>
+        <h2 class="section-title section-title--voice">お客様の声</h2>
         <!-- slick-slider -->
         <ul class="slider">
             <li class="slide">
               <h3 class="slide__topic">フェイシャルコース</h3>
-              <div class="slide__group">
+              <div class="slide__group slide__group--facialCourse">
                 <img class="slide__image" src="assets/image/voice_left.png" alt="">
-                <div class="slide__txtZone">
+                <div class="slide__txtZone slide__txtZone--facialCourse">
                   <p class="slide__txtZone-name">20代 R.Bさま/大学生</p>
-                  <p class="slide__txtZone-txt">ここにコピーが入ります。ここにコピーが入ります。ここにコピーが入ります。ここにコピーが入ります。</p>
+                  <p class="slide__txtZone-txt slide__txtZone-txt--facialCourse">ここにコピーが入ります。ここにコピーが入ります。ここにコピーが入ります。ここにコピーが入ります。</p>
                 </div>
               </div>
             </li>
@@ -267,9 +271,9 @@
 
             <li class="slide">
               <h3 class="slide__topic">ボディコース</h3>
-              <div class="slide__group">
-                <img class="slide__image" src="assets/image/voice_right.png" alt="">
-                <div class="slide__txtZone">
+              <div class="slide__group slide__group--bodyCourse">
+                <img class="slide__image slide__image--bodyCourse" src="assets/image/voice_right.png" alt="">
+                <div class="slide__txtZone slide__txtZone--bodyCourse">
                   <p class="slide__txtZone-name">20代 Y.Kさま/会社員</p>
                   <p class="slide__txtZone-txt">ここにコピーが入ります。ここにコピーが入ります。ここにコピーが入ります。ここにコピーが入ります。</p>
                 </div>
@@ -296,25 +300,3 @@
   </footer>
 </body>
 </html>
-
-<!-- 「お客様の声」の各コースがスライドする -->
-
-<!-- 横幅768px未満：SP表示
-横幅768px以上：PC表示 -->
-
-<!-- デザインで使用されているフォントは以下の種類になります。
-・Noto Sans JP Regular（https://fonts.google.com/noto/specimen/Noto+Sans+JP?query=noto+sans+jp）
-・Noto Sans JP SemiBold（https://fonts.google.com/noto/specimen/Noto+Sans+JP?query=noto+sans+jp）
-・Noto Sans JP Bold（https://fonts.google.com/noto/specimen/Noto+Sans+JP?query=noto+sans+jp）
-・Outfit Regular（https://fonts.google.com/specimen/Outfit?query=outfit&noto.query=outfit）
-Noto Sans JPのVariableフォントをインストールされた方は「lp3_variable.psd」、Staticフォントをインストールされた方は「lp3_static.psd」のPSDファイルを使用して課題を進めてください。 -->
-
-<!-- font-family: "Noto Sans JP", sans-serif; -->
-<!-- font-family: "Outfit", sans-serif; -->
-
-<!-- PCはブラウザ幅がコンテンツ幅よりも狭くなってから可変するようにしてください（余白も含めて可変しないようにしてください）。 -->
-
-<!-- SPをperfect pixelで確認する際は横幅をデザインと同じ390pxで確認してください。 -->
-
-<!-- 伸び縮み細かく確認 -->
-<!-- ホバー時の画像拡大処理 -->
