@@ -354,7 +354,8 @@ hero
 
 .hero-benefit {
     width: 100%;
-    max-width: 360px;
+    /* max-width: 360px; */
+    max-width: 423px;
     aspect-ratio: 188 / 107;
     /* padding: 24px 25px 24px 26px;
     padding: 24px 20px 24px 20px; */
@@ -439,7 +440,8 @@ hero
 
 
 /* hero PC */
-@media screen and (min-width:768px) {
+/* heroは769px～1100pxで表示崩れが起きるため1100pxをブレークポイント */
+@media screen and (min-width:1100px) {
     .hero {
         width: 100%;
         /* aspect-ratio: 1440 / 612; */
@@ -545,7 +547,7 @@ hero
         translate: 44px 0px;
     }
 
-} /* @media screen and (min-width:768px */
+} /* @media screen and (min-width:1100px */
 
 
 /*
@@ -1296,7 +1298,8 @@ freetrial02
 
 .freetrial02__item {
     width: 100%;
-    aspect-ratio: 350 / 341;
+    /* aspect-ratio: 350 / 341; */
+    aspect-ratio: auto;
     border: 1px solid #fa7da3;
     border-radius: 10px;
     /* 上部角丸の欠けを防ぐため */
@@ -1540,7 +1543,7 @@ voice
         /* slick off時の横並びのため */
         display: flex;
         justify-content: center;
-        gap: 0 6px;
+        gap: 10px 6px;
     }
 
     .pagenation-pc {
