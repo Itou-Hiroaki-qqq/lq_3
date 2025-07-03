@@ -216,7 +216,6 @@ header
 }
 
 .header-group__btnZone__reserveBtn {
-    /* max-width: 173px; */
     padding: 9px 23px 9px 13px;
     background-color: #49c43d;
     border-radius: 15.5px;
@@ -272,7 +271,6 @@ header
     }
 
     .header-group__btnZone__contactBtn {
-        /* max-width: 189px; */
         max-width: none;
         padding: 13px 37px 15px 27px;
         border-radius: 25.18px;
@@ -290,7 +288,6 @@ header
     }
 
     .header-group__btnZone__reserveBtn {
-        /* max-width: 295px; */
         padding: 15px 38px 14px 21px;
         border-radius: 25.18px;
         font-size: 1.32rem;
@@ -340,7 +337,6 @@ hero
 
 .hero-left h2 {
     margin-top: 9%;
-    /* font-size: 42px; */
     font-size: calc(100vw * 42/390);
     color: #fff;
     text-align: right;
@@ -355,7 +351,6 @@ hero
 
 .hero-left p {
     margin-top: 5px;
-    /* font-size: 18px; */
     font-size: calc(100vw * 18/390);
     color: #fff;
     text-align: center;
@@ -365,11 +360,8 @@ hero
 
 .hero-benefit {
     width: 100%;
-    /* max-width: 360px; */
     max-width: 423px;
     aspect-ratio: 188 / 107;
-    /* padding: 24px 25px 24px 26px;
-    padding: 24px 20px 24px 20px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -381,10 +373,8 @@ hero
 .hero-benefit__now p:first-of-type {
     background-color: #fff;
     padding: 4px 4px 5px 5px;
-    /* font-size: 13px; */
     font-size: calc(100vw * 13/390);
     font-weight: bold;
-    /* line-height: 4.61; */
     color: #fa7da3;
     /* 調整 */
     translate: 2px 2px;
@@ -392,7 +382,6 @@ hero
 
 .hero-benefit__now p:last-of-type {
     margin-top: 7px;
-    /* font-size: 24px; */
     font-size: calc(100vw * 24/390);
     font-weight: bold;
     color: #fff;
@@ -401,7 +390,6 @@ hero
 }
 
 .hero-benefit__price {
-    /* font-size: 76px; */
     font-size: calc(100vw * 76/390);
     font-weight: bold;
     color: #fffd7a;
@@ -416,29 +404,22 @@ hero
 .hero-standardPrice {
     margin-top: 10px;
     font-family: "Outfit", sans-serif;
-    /* font-size: 14px; */
     font-size: calc(100vw * 14/390);
     color: #fff;
-    /* transform: translateX(52%); */
     margin-left: 52%;
 }
 
 .hero-standardPrice span {
-    /* font-size: 9px; */
     font-size: calc(100vw * 9/390);
 }
 
 .hero-advantageZone p {
-    /* width: 133px; */
     width: calc(100% * 140/195);
     aspect-ratio: 130 / 34;
-    /* height: 35px; */
-    /* padding: 9px 0 9px; */
     display: flex;
     align-items: center;
     justify-content: center;
     border: 1px solid #fff;
-    /* font-size: 18px; */
     font-size: calc(100vw * 18/390);
     color: #fff;
     margin: 12px auto 0;
@@ -456,7 +437,6 @@ hero
 @media screen and (min-width:1100px) {
     .hero {
         width: 100%;
-        /* aspect-ratio: 1440 / 612; */
         aspect-ratio: auto;
         background: url(../image/hero_pc.jpg) no-repeat top center / cover;
         display: flex;
@@ -476,7 +456,6 @@ hero
 
     .hero-left h2 {
         margin-top: 12px;
-        /* font-size: 122px; */
         font-size: max(122px, calc(100vw * 122/1440));
         text-align: right;
         margin-right: 0;
@@ -486,7 +465,6 @@ hero
 
     .hero-left p {
         margin-top: 9px;
-        /* font-size: 36px; */
         font-size: max(36px, calc(100vw * 36/1440));
         text-align: right;
         /* 調整 */
@@ -497,8 +475,6 @@ hero
         width: calc(100% * 398/658);
         max-width: none;
         aspect-ratio: 423 / 222;
-        /* padding: 24px 25px 24px 26px;
-        padding: 24px 20px 24px 20px; */
         display: flex;
         align-items: center;
         justify-content: center;
@@ -511,7 +487,6 @@ hero
 
     .hero-benefit__now p:first-of-type {
         padding: 12px 10px 11px 11px;
-        /* font-size: 29px; */
         font-size: max(29px, calc(100vw * 29/1440));
         text-align: center;
         translate: 9px -3px;
@@ -519,39 +494,32 @@ hero
 
     .hero-benefit__now p:last-of-type {
         margin-top: 11px;
-        /* font-size: 54px; */
         font-size: max(54px, calc(100vw * 54/1440));
         translate: 10px 0px;
     }
 
     .hero-benefit__price {
-        /* font-size: 171px; */
         font-size: max(171px, calc(100vw * 171/1440));
         transform: translateY(-6%);
     }
 
     .hero-benefit__price span {
-        /* font-size: 81px; */
         font-size: max(81px, calc(100vw * 81/1440));
     }
 
     .hero-standardPrice {
         margin-top: 5px;
-        /* font-size: 26.5px; */
         font-size: max(26.5px, calc(100vw * 26.5/1440));
-        /* transform: translateX(41%); */
         margin-left: 41%
     }
 
     .hero-standardPrice span {
-        /* font-size: 17px; */
         font-size: max(17px, calc(100vw * 17/1440));
     }
 
     .hero-advantageZone p {
         width: calc(100% * 398/658);
         aspect-ratio: 423 / 64;
-        /* font-size: 28px; */
         font-size: max(28px, calc(100vw * 28/1440));
         margin: 25px 0 0 0;
         margin-right: auto;
@@ -738,7 +706,6 @@ freetrial01
     font-size: 1.0625rem;
     font-weight: 600;
     color: #50bfff;
-    /* line-height: 1.64; */
     letter-spacing: 0.1em;
 }
 
@@ -934,7 +901,6 @@ point
     letter-spacing: 0em;
 }
 
-/* ここから全身プラン　パディングの設定を忘れずに */
 .point__content-fullbodyZone {
     margin-top: 26px;
     padding-right: 19px;
@@ -1314,7 +1280,6 @@ freetrial02
 
 .freetrial02__item {
     width: 100%;
-    /* aspect-ratio: 350 / 341; */
     aspect-ratio: auto;
     border: 1px solid #fa7da3;
     border-radius: 10px;
@@ -1405,7 +1370,6 @@ freetrial02
     }
 
     .freetrial02__detailZone p {
-        /* font-size: 18px; */
         font-size: 17px;
         line-height: 1.55;
     }
